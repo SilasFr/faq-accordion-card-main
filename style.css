@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: center;
 
-  background-color: #ededed;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   font-family: "Kumbh Sans", sans-serif;
 }
 
@@ -69,8 +69,28 @@ h1 {
   text-align: center;
 }
 
-.question {
+.dd-menu {
   border-bottom: 1px solid #ededed;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+}
+
+.question:hover {
+  color: #f47c57;
+}
+
+.question:active,
+.question::selection {
+  font-weight: bold;
+  color: #000;
+}
+
+button.dropdown {
+  background: none;
+  border: none;
 }
 
 .answer {
