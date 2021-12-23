@@ -7,28 +7,34 @@
 }
 
 body {
+  max-width: 375px;
   width: 100%;
   height: 100vh;
+  max-height: 812px;
   display: flex;
+  justify-content: center;
 
   background-color: #ededed;
   font-family: "Kumbh Sans", sans-serif;
+}
+
+main {
+  width: 100%;
 }
 
 .container {
   background-color: #fff;
   border-radius: 10px;
   width: 90%;
-  height: 75%;
+  max-height: fit-content;
   padding: 6%;
   margin: 0 auto;
-  margin-top: 20px;
-  overflow-y: scroll;
+  margin-top: 180px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 header {
@@ -36,8 +42,27 @@ header {
 }
 
 header img {
-  overflow: visible;
   width: 80%;
+}
+
+.mobile-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  position: absolute;
+  bottom: -50px;
+}
+
+.img-shadow {
+  position: absolute;
+  bottom: -80px;
+}
+
+.faq {
+  margin-top: 80px;
 }
 
 h1 {
@@ -46,6 +71,14 @@ h1 {
 
 .question {
   border-bottom: 1px solid #ededed;
+}
+
+.answer {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 .selected {
